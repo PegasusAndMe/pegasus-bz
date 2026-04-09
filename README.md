@@ -2,7 +2,7 @@
 
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
-This is a custom image based on the Universal Blue modified Kinoite (main) image: ghcr.io/ublue-os/kinoite-main. This is pulling from "latest" and not a specific version... for now at least. 
+This is a custom image based on the Universal Blue Bazzite Nvidia (KDE) image: ghcr.io/ublue-os/bazzite-nvidia. This is pulling from version "43" for now.
 
 I have added a few packages I commonly use for multi-media tasks and have also swapped out GTK apps like Distroshelf and Bazaar with their Qt counterparts. It just makes more sense to me. 
 
