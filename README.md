@@ -1,8 +1,10 @@
-# BlueBuild Template &nbsp; [![bluebuild build badge](https://github.com/blue-build/template/actions/workflows/build.yml/badge.svg)](https://github.com/blue-build/template/actions/workflows/build.yml)
+# pegasus-bz &nbsp; [![bluebuild build badge](https://github.com/blue-build/template/actions/workflows/build.yml/badge.svg)](https://github.com/blue-build/template/actions/workflows/build.yml)
 
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
-After setup, it is recommended you update this README to describe your custom image.
+This is a custom image based on the Universal Blue modified Kinoite (main) image: ghcr.io/ublue-os/kinoite-main. This is pulling from "latest" and not a specific version... for now at least. 
+
+I have added a few packages I commonly use for multi-media tasks and have also swapped out GTK apps like Distroshelf and Bazaar with their Qt counterparts. It just makes more sense to me. 
 
 ## Installation
 
@@ -13,7 +15,7 @@ To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/blue-build/template:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/pegasusandme/pegasus-bz:latest
   ```
 - Reboot to complete the rebase:
   ```
@@ -21,7 +23,7 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/blue-build/template:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/pegasusandme/pegasus-bz:latest
   ```
 - Reboot again to complete the installation
   ```
