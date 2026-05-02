@@ -38,6 +38,7 @@ modules:
         - mediawriter
         - micro
         - ncdu
+        - ollama
         - plocate
         - plasma-discover
         - okular
